@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="UTF-8">
-	<script src="jquery-3.4.0.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -12,8 +11,8 @@
 	<link href="styles/js/jquery-3.4.1.js" type="text/javascript" rel="stylesheet">
 	<link href="assets/webfontkit/stylesheet.css" rel="stylesheet">
 	<link href="assets/images/photos/favicon.png" rel="icon" type="image/png">
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+	<meta charset="UTF-8">
+
 
 	<title>Steffi-Ann Mendoza</title>
 </head>
@@ -27,8 +26,8 @@
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon text" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu text-white" style="font-family: Moon Flower,MoonFlower; font-size: 35px;" >
-    <li><a href="#">Motion</a></li>
-    <li><a href="#">Photography</a></li>
+    <li><a href="motion.html">Motion</a></li>
+    <li><a href="photography.html">Photography</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </header>
@@ -52,21 +51,21 @@
 <!-- Delete from here to the next comment to add different content -->
 
 <!-- Carousel	 -->
-	<div class="owl-carousel owl-theme">	
-      <div><img src="assets/images/photos/hero3.jpg"></div>
-      <div><img src="assets/images/photos/hero4.jpg"></div>
-      <div><img src="assets/images/photos/hero2.jpg"></div>
-	</div>
 
+	<div class="hero w3-content w3-section ">	
+      <div class="mySlides"><img src="assets/images/photos/hero3.jpg"></div>
+      <div class="mySlides"><img src="assets/images/photos/hero4.jpg"></div>
+      <div class="mySlides"><img src="assets/images/photos/hero2.jpg"></div>
+	</div>
 <!-- End Carousel -->
 <!-- Delete to this comment and add content in between -->
 
 <!-- Body -->
 
-<div class="container-xl mx-auto flex-col flex overflow bg-bottom" style="height: 100%;
+<div class="container-xl mx-auto flex-col flex overflow bg-bottom mt-2" style="height: 100%;
     background: linear-gradient(180deg, #ffffff 50%, #000000 50%);" alt="backgroundBreak">
 	<div class="container-sm h-auto md:container-xl mx-auto pb-2" alt="portrait">
-		<center><img src="assets/images/portrait.png" class="content-center h-full md:h-full"></center>
+		<center><img src="assets/images/portrait.png" id="portrait" class="content-center h-1/2 md:h-full"></center>
 	</div>
 	<div class="font-sans container block mx-auto text-white text-lg flex-col p-3" alt="aboutText" style="font-family: 'Roboto';">
 		<p class="">
@@ -122,7 +121,6 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
 <script>
 $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -152,5 +150,23 @@ $(document).ready(function(){
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+
+  <script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "inline-block";  
+		setTimeout(carousel, 2000);
+	}
+	</script>	
+
 
 </html>
