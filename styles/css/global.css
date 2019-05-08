@@ -73,6 +73,9 @@ a {
   color: #000;
 }
 /*hero*/
+.mySlides img {
+  width: 100%;
+}
 
 /* menu icon */
 
