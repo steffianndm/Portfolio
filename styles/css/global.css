@@ -15,8 +15,10 @@ button {
 
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: #ffffff;
+  overflow-x:hidden;
+
 }
 
 a {
@@ -30,7 +32,7 @@ a {
   background-color: #000;
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: auto;
 }
 
 .header ul {
