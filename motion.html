@@ -49,21 +49,64 @@
 <div class="max-w-full">
 <!-- End Header -->
 
-<!-- Delete from here to the next comment to add different content -->
 
-<!-- Carousel	 -->
+<!-- Gallery -->
+<link href="dist/lity.css" rel="stylesheet">
+<script src="vendor/jquery.js"></script>
+<script src="dist/lity.js"></script>
+<script>
+$(document).on('lity:ready', function(event, $lightbox) {
+    var $triggeringElement = $lightbox.opener();
+    $('.lity-content').append('<h2 class="text-white text-center">' + $triggeringElement.data('title') + '</h2><p class="text-grey-light text-center">' + $triggeringElement.data('desc') + '</p>');
+});
+</script>
 
-	<div class="hero w3-content w3-section">	
-      <div class="mySlides"><img src="assets/images/photos/hero3.jpg"></div>
-      <div class="mySlides"><img src="assets/images/photos/hero4.jpg"></div>
-      <div class="mySlides"><img src="assets/images/photos/hero2.jpg"></div>
-	</div>
-<!-- End Carousel -->
-<!-- Delete to this comment and add content in between -->
+<div class="container mx-auto">
+<div class="flex flex-wrap w-full container mx-auto lg:-mx-4 mb-32">
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image19.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image19.JPG" ></a></div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image18.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image18.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image15.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image04.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image15.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image15.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image06.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image06.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image07.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image07.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image08.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image08.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image09.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image09.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image10.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image10.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image11.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image11.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image12.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image12.JPG"></a>  </div>
+
+  <div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+ <a href="gallery/image13.JPG" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="gallery/image13.JPG"></a>  </div>
+
+</div>
+</div>
+
 
 <!-- Body -->
 
-<div class="w-screen mx-auto flex-col flex overflow bg-bottom mt-2" style="height: 100%;
+<div class="w-screen mx-auto flex-col flex overflow bg-bottom pb-12 mt-2" style="height: 100%;
     background: linear-gradient(180deg, #ffffff 50%, #000000 50%);" alt="backgroundBreak">
 	<div class="container-sm h-auto md:container-xl mx-auto pb-2" alt="portrait">
 		<center><img src="assets/images/portrait.png" id="portrait" class="content-center h-1/2 md:h-full"></center>
