@@ -53,12 +53,18 @@
 <link href="dist/lity.css" rel="stylesheet">
 <script src="vendor/jquery.js"></script>
 <script src="dist/lity.js"></script>
+<script>
+$(document).on('lity:ready', function(event, $lightbox) {
+    var $triggeringElement = $lightbox.opener();
+    $('.lity-content').append('<h2 class="text-white">' + $triggeringElement.data('title') + '</h2><p class="text-white">' + $triggeringElement.data('desc') + '</p>');
+});
+</script>
 
 
 <div class="flex flex-wrap overflow-hidden w-full">
 
   <div class="w-full overflow-hidden md:w-1/2">
- <a href="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" data-lity data-lity-desc="Photo of a flower" lity-alt="HELP"><img src="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg"></a>  </div>
+ <a href="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" data-lity data-lity-desc="Photo of a flower" data-title="TESTEST" data-desc="testest"><img src="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" ></a></div>
 
   <div class="w-full overflow-hidden md:w-1/2">
  <a href="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" data-lity data-lity-desc="Photo of a flower"><img src="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg"></a>  </div>
