@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+		rel="stylesheet">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel=
+		"stylesheet">
+		<link href="styles/css/global.css" rel="stylesheet" type="text/css">
+		<link href="styles/js/scroll.js" rel="stylesheet" type="text/javascript">
+		<link href="styles/js/jquery-3.4.1.js" rel="stylesheet" type=
+		"text/javascript">
+		<link href="assets/webfontkit/stylesheet.css" rel="stylesheet">
+		<link href="assets/images/photos/favicon.png" rel="icon" type="Image/png">
+		<meta charset="UTF-8">
+		<title>
+			Steffi-Ann Mendoza
+		</title>
+	</head>
+	<body>
+		<div class="w-full">
+			<header class="header p-3 w-full">
+				<a href="index.html"><img src=
+				"assets/images/Steffi-Ann%20Mendoza.png" alt="logo"></a> <input class="menu-btn" id=
+				"menu-btn" type="checkbox"> <label class="menu-icon text" for=
+				"menu-btn"><span class="navicon"></span></label>
+				<ul class="menu text-white" style=
+				"font-family: Moon Flower,MoonFlower; font-size: 35px;">
+					<li>
+						<a href="motion.html">Motion</a>
+					</li>
+
+					<li>
+						<a href="photography.html">Photography</a>
+					</li>
+
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</header>
+
+			<nav class=
+			"invisible md:visible md:text-5xl text-3xl flex text-white justify-between sm:mx-auto"
+			style="font-family: Moon Flower,MoonFlower;">
+				<a class="no-underline text-white" href="motion.html">Motion</a> |
+				<a class="no-underline text-white" href="photography.html">Photography</a>
+				| <a class="no-underline text-white" href="#contact" style>Contact</a>
+			</nav>
+
+			<div class="max-w-full">
+				<!-- End Header -->
+				<!-- Gallery -->
+				<link href="dist/lity.css" rel="stylesheet">
+				<script src="vendor/jquery.js">
+				</script> 
+				<script src="dist/lity.js">
+				</script> 
+				<script>
+				            $(document).on('lity:ready', function(event, $lightbox) {
+				            var $triggeringElement = $lightbox.opener();
+				            $('.lity-content').append('<h2 class="text-white text-center">' + $triggeringElement.data('title') + '<\/h2><p class="text-grey-light text-center">' + $triggeringElement.data('desc') + '<\/p>');
+				            });
+				</script>
+				<div class="container mx-auto">
+					<div class="flex flex-wrap w-full container mx-auto lg:-mx-4 mb-32">
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href="assets/images/gallery/Image19.jpg" data-desc="2016" data-lity data-lity-desc=
+							"Four friends double exposed over flowers." data-title="Four Friends"
+							><img src=
+							"assets/images/gallery/Image19.jpg" alt=
+							"Four friends double exposed over flowers"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href=
+							"assets/images/gallery/Image18.jpg" data-lity data-desc="2016"  data-lity-desc=
+							"A cat and a headless bird double exposure" data-title="Untitled"><img src=
+							"assets/images/gallery/Image18.jpg" alt=
+							"A cat and a headless bird double exposure"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href=
+							"assets/images/gallery/Image04.jpg" data-desc="2016" data-lity data-lity-desc=
+							"Neon signs double exposed." data-title="Double" ><img src="assets/images/gallery/Image04.jpg" alt="Neon signs double exposed"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href="assets/images/gallery/Image15.jpg" data-lity data-desc="2017" data-lity data-lity-desc=
+							"A boy sitting with his knees to his chest" data-title="John in Japan">
+							<img src=
+							"assets/images/gallery/Image15.jpg" alt=
+							"A boy sitting with his knees to his chest"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href="assets/images/gallery/Image06.jpg" data-lity data-desc="2016" data-lity-desc=
+							"A woman with red hair holding a gun to her lips." data-title="Maritza"
+							><img src=
+							"assets/images/gallery/Image06.jpg" alt=
+							"A woman with red hair holding a gun to her lips"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href="assets/images/gallery/Image07.jpg" data-lity data-desc="2017" data-lity-desc=
+							"Japanese train station double exposed with the train patrons."
+							data-title="Japanese Train Station" ><img src=
+							"assets/images/gallery/Image07.jpg" alt=
+							"Japanese train station double exposed with the train patrons"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href=
+							"assets/images/gallery/Image08.jpg" data-desc="2017" data-lity data-lity-desc=
+							"Inside a Japanese train." data-title="Japanese Train Station 2" ><img src=
+							"assets/images/gallery/Image08.jpg"  alt="Inside a Japanese train"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href="assets/images/gallery/Image09.jpg" data-desc="2017" data-lity data-lity-desc=
+							"A train coming into the station." data-title="Japanese Train Station 3"
+							><img src="assets/images/gallery/Image09.jpg" alt="A train coming into the station"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href="assets/images/gallery/Image10.jpg" data-desc="2017" data-lity
+							data-lity-desc="A Japanese Shrine" data-title="Untitled"><img src="assets/images/gallery/Image10.jpg" alt="A Japanese Shrine"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href=
+							"assets/images/gallery/Image11.jpg"  data-desc="2017" data-lity
+							data-lity-desc="Japanese paper cranes." data-title="Cranes"><img src="assets/images/gallery/Image11.jpg" alt="Japanese paper cranes"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href=
+							"assets/images/gallery/Image12.jpg" data-desc="2018" data-lity data-lity-desc=
+							"A headless bird over a bed of flowers" data-title="Untitled" ><img
+							src="assets/images/gallery/Image12.jpg" alt="A headless bird over a bed of flowers"></a>
+						</div>
+
+						<div class="w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/2">
+							<a href=
+							"assets/images/gallery/Image13.jpg" data-desc="2017" data-lity data-lity-desc=
+							"A busy street in Akihabara" data-title="Akihabara" ><img src=
+							"assets/images/gallery/Image13.jpg" alt="A busy street in Akihabara"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Body -->
+
+				<div alt="backgroundBreak" class=
+				"w-screen mx-auto flex-col flex overflow bg-bottom pb-12 mt-2" style=
+				"height: 100%; background: linear-gradient(180deg, #ffffff 50%, #000000 50%);">
+					<div alt="portrait" class=
+					"container-sm h-auto md:container-xl mx-auto pb-2">
+						<center>
+							<img class="content-center h-1/2 md:h-full" id="portrait" src=
+							"assets/images/portrait.png">
+						</center>
+					</div>
+
+					<div alt="aboutText" class=
+					"font-sans container block mx-auto text-white text-lg flex-col p-3" style=
+					"font-family: 'Roboto';">
+						<p class>
+							Steffi-Ann Mendoza is a student at California State University,
+							Northridge. She is part of the Cinema and Television Arts program, with
+							an emphasis in Multimedia Production. She was the secretary for Los
+							Angeles Pierce College's Film club, and she has worked as a Production
+							intern for the CW television show <i>My Crazy Ex Girlfriend</i>.
+						</p>
+					</div>
+				</div>
+				<!-- End Body -->
+			</div>
+			<!-- contact -->
+
+			<div class="w-full h-full pt-32" id="contact">
+				<div class="block w-full mx-auto">
+					<button class="block mt-24 mx-auto" onclick="toggle()" style=
+					"border: none; outline: none;"><img src=
+					"assets/images/email.png" alt="email"></button>
+					<p class="invisible text-2xl md:text-5xl font-black p-3 tracking-wide" id=
+					"email" style="font-family: MoonFlower, Moon Flower; text-align: center;">
+						steffiann.mendoza@gmail.com
+					</p>
+
+					<div class=
+					"flex flex-col md:flex-row justify-between items-center pt-12 pl-12 pr-12 mb-32">
+						<a class="inline-block p-5" href="#"><img src=
+						"assets/images/twitter.png" alt="twitter"></a> <a class="inline-block p-5" href=
+						"#"><img src="assets/images/linkdin.png" alt="linkdin"></a> <a class="inline-block p-5"
+						href="#"><img src="assets/images/vimeo.png" alt="vimeo"></a> <a class=
+						"inline-block p-5" href="#"><img src="assets/images/youtube.png" alt="youtube"></a>
+					</div>
+					<!-- footer -->
+
+					<div class="w-screen flex justify-between items-center"
+					style="background-color: #000000;">
+						<div class="mx-auto flex">
+							<a href="index.html"><img src=
+							"assets/images/Steffi-Ann%20Mendoza.png" alt="logo"></a>
+						</div>
+
+						<footer class=
+						" text-l flex text-white justify-between sm:mx-auto md:text-5xl" style=
+						"font-family: Moon Flower,MoonFlower;">
+							© 2019 All Rights Reserved
+						</footer>
+				</div>
+			</div>
+		</div>
+			<!-- End Footer -->
+			<script src=
+			"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+			</script> 
+			<script src="jquery.min.js">
+			</script> 
+			<script>
+			         $(document).ready(function(){
+			         $("a").on('click', function(event) {
+
+			          if (this.hash !== "") {
+			            event.preventDefault();
+
+			            var hash = this.hash;
+
+			            $('html, body').animate({
+			              scrollTop: $(hash).offset().top
+			            }, 1000, function(){
+
+			              window.location.hash = hash;
+			            });
+			          } 
+			         });
+			         });
+			</script> 
+			<script>
+			          function toggle() {
+			              var element = document.getElementById("email");
+			              element.classList.toggle("invisible");
+			          }
+			</script> 
+			<script crossorigin="anonymous" integrity=
+			"sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" src=
+			"https://code.jquery.com/jquery-3.4.1.js">
+			</script> 
+			<script>
+			          var myIndex = 0;
+			          carousel();
+
+			          function carousel() {
+			              var i;
+			              var x = document.getElementsByClassName("mySlides");
+			              for (i = 0; i < x.length; i++) {
+			                 x[i].style.display = "none";  
+			              }
+			              myIndex++;
+			              if (myIndex > x.length) {myIndex = 1}    
+			              x[myIndex-1].style.display = "block";  
+			              setTimeout(carousel, 2000);
+			          }
+			</script>
+		</div>
+	</body>
+</html>
