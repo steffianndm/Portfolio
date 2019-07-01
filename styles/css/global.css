@@ -75,14 +75,14 @@ a {
   display: inline-block;
   float: right;
   padding: 28px 28px;
-  position: relative;
+  position: absolute;
   user-select: none;
 }
 .header .menu-icon .navicon {
   background: #fff;
   display: block;
   height: 2px;
-  position: relative;
+  position: absolute;
   transition: background .2s ease-out;
   width: 18px;
 }
@@ -136,7 +136,8 @@ a {
   .header li a {}
   .header .menu {
     clear: none;
-    float: right;
+    float: left;
+    position: relative;
     max-height: none;
   }
   .header .menu-icon {
